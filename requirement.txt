@@ -1,0 +1,16 @@
+# === Backend Framework ===
+Flask==2.3.2
+
+# === Data Handling ===
+pandas==2.0.3
+numpy==1.25.2
+
+# === Machine Learning / Similarity ===
+scikit-learn==1.3.0
+
+# === For Development (optional) ===
+jinja2==3.1.2
+gunicorn==20.1.0  # If deploying on Render/Heroku
+
+# === Dataset file handling ===
+joblib==1.3.2     # For saving/loading precomputed models or similarity matrices
