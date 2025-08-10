@@ -4,7 +4,7 @@
 # 📺 Anime Recommendation System
 
 A **full-stack, machine learning-powered recommendation system** that suggests anime titles based on user preferences.  
-This project implements **Content-Based Filtering, Collaborative Filtering, Popularity-Based, and Hybrid Recommendation algorithms**, along with a **modern, responsive UI** — making it a perfect showcase for your resume and GitHub portfolio.
+This project implements **Content-Based Filtering, Collaborative Filtering, Popularity-Based, and Hybrid Recommendation algorithms**, along with a **modern, responsive UI.**
 
 ***
 
