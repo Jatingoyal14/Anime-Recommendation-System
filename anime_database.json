@@ -1,0 +1,429 @@
+[
+  {
+    "id": 1,
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Fantasy",
+      "Military",
+      "Shounen"
+    ],
+    "rating": 9.1,
+    "year": 2009,
+    "episodes": 64,
+    "status": "Completed",
+    "synopsis": "After a disastrous alchemy experiment, brothers Edward and Alphonse Elric search for the Philosopher's Stone to restore their bodies.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1223/96541.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 2,
+    "title": "Frieren: Beyond Journey's End",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "rating": 9.3,
+    "year": 2023,
+    "episodes": 28,
+    "status": "Completed",
+    "synopsis": "Elf mage Frieren reflects on mortality and friendship after her hero's party dissolves following their quest to defeat the Demon King.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1015/138006.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 3,
+    "title": "Solo Leveling",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "rating": 8.6,
+    "year": 2024,
+    "episodes": 12,
+    "status": "Ongoing",
+    "synopsis": "Weak hunter Sung Jinwoo becomes the world's strongest after gaining a mysterious system that allows him to level up.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1906/140923.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 4,
+    "title": "Demon Slayer: Kimetsu no Yaiba",
+    "genres": [
+      "Action",
+      "Historical",
+      "Shounen",
+      "Supernatural"
+    ],
+    "rating": 8.7,
+    "year": 2019,
+    "episodes": 26,
+    "status": "Completed",
+    "synopsis": "Tanjiro becomes a demon slayer to save his sister Nezuko who was turned into a demon.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 5,
+    "title": "Attack on Titan",
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy",
+      "Military",
+      "Shounen"
+    ],
+    "rating": 8.5,
+    "year": 2013,
+    "episodes": 25,
+    "status": "Completed",
+    "synopsis": "Humanity fights for survival against giant humanoid creatures called Titans.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/10/47347.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 6,
+    "title": "One Piece",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Drama",
+      "Shounen"
+    ],
+    "rating": 8.7,
+    "year": 1999,
+    "episodes": 1000,
+    "status": "Ongoing",
+    "synopsis": "Monkey D. Luffy explores the Grand Line with his crew to find the ultimate treasure, One Piece.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/6/73245.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 7,
+    "title": "Your Name",
+    "genres": [
+      "Drama",
+      "Romance",
+      "School",
+      "Shounen"
+    ],
+    "rating": 8.4,
+    "year": 2016,
+    "episodes": 1,
+    "status": "Completed",
+    "synopsis": "Two teenagers share a profound, magical connection when they start swapping bodies.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/5/87048.jpg",
+    "type": "Movie"
+  },
+  {
+    "id": 8,
+    "title": "Spirited Away",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Supernatural"
+    ],
+    "rating": 9.3,
+    "year": 2001,
+    "episodes": 1,
+    "status": "Completed",
+    "synopsis": "A girl enters a world ruled by gods and witches, where humans are changed into beasts.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/6/79597.jpg",
+    "type": "Movie"
+  },
+  {
+    "id": 9,
+    "title": "My Hero Academia",
+    "genres": [
+      "Action",
+      "School",
+      "Shounen",
+      "Super Power"
+    ],
+    "rating": 7.9,
+    "year": 2016,
+    "episodes": 13,
+    "status": "Completed",
+    "synopsis": "In a world where superpowers are the norm, a boy born without them dreams of becoming a hero.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/10/78745.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 10,
+    "title": "Death Note",
+    "genres": [
+      "Drama",
+      "Psychological",
+      "Shounen",
+      "Supernatural",
+      "Thriller"
+    ],
+    "rating": 9.0,
+    "year": 2006,
+    "episodes": 37,
+    "status": "Completed",
+    "synopsis": "A high school student discovers a supernatural notebook that kills anyone whose name is written in it.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/9/9453.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 11,
+    "title": "Naruto",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Martial Arts",
+      "Shounen"
+    ],
+    "rating": 8.3,
+    "year": 2002,
+    "episodes": 220,
+    "status": "Completed",
+    "synopsis": "A young ninja seeks recognition from his peers and dreams of becoming the Hokage.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/13/17405.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 12,
+    "title": "Cowboy Bebop",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Sci-Fi",
+      "Space"
+    ],
+    "rating": 8.8,
+    "year": 1998,
+    "episodes": 26,
+    "status": "Completed",
+    "synopsis": "The futuristic misadventures of bounty hunters traveling in their spaceship called Bebop.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/4/19644.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 13,
+    "title": "Dandadan",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Romance",
+      "School",
+      "Shounen",
+      "Supernatural"
+    ],
+    "rating": 8.8,
+    "year": 2024,
+    "episodes": 12,
+    "status": "Ongoing",
+    "synopsis": "A story about ghosts, aliens, and the unlikely friendship between two high school students.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1695/144718.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 14,
+    "title": "Jujutsu Kaisen",
+    "genres": [
+      "Action",
+      "School",
+      "Shounen",
+      "Supernatural"
+    ],
+    "rating": 8.6,
+    "year": 2020,
+    "episodes": 24,
+    "status": "Completed",
+    "synopsis": "A high school student joins a secret organization of Jujutsu Sorcerers to kill Curses.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 15,
+    "title": "Princess Mononoke",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "rating": 8.7,
+    "year": 1997,
+    "episodes": 1,
+    "status": "Completed",
+    "synopsis": "A prince becomes involved in the struggle between forest gods and a mining colony.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/7/75919.jpg",
+    "type": "Movie"
+  },
+  {
+    "id": 16,
+    "title": "Hunter x Hunter",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Shounen"
+    ],
+    "rating": 9.0,
+    "year": 2011,
+    "episodes": 148,
+    "status": "Completed",
+    "synopsis": "A young boy seeks to become a Hunter and find his father who abandoned him.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/11/33657.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 17,
+    "title": "One Punch Man",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Parody",
+      "Seinen",
+      "Super Power"
+    ],
+    "rating": 8.8,
+    "year": 2015,
+    "episodes": 12,
+    "status": "Completed",
+    "synopsis": "A superhero who can defeat any enemy with a single punch struggles with ennui.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/12/76049.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 18,
+    "title": "Mob Psycho 100",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Supernatural"
+    ],
+    "rating": 8.9,
+    "year": 2016,
+    "episodes": 12,
+    "status": "Completed",
+    "synopsis": "A psychic middle schooler tries to live normally despite his extraordinary powers.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/8/80356.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 19,
+    "title": "Haikyuu!!",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "School",
+      "Shounen",
+      "Sports"
+    ],
+    "rating": 8.7,
+    "year": 2014,
+    "episodes": 25,
+    "status": "Completed",
+    "synopsis": "A short boy joins his school's volleyball team despite his height disadvantage.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/7/76014.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 20,
+    "title": "Chainsaw Man",
+    "genres": [
+      "Action",
+      "Shounen",
+      "Supernatural"
+    ],
+    "rating": 8.5,
+    "year": 2022,
+    "episodes": 12,
+    "status": "Completed",
+    "synopsis": "A young man makes a contract with a devil and becomes part human, part chainsaw.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1806/126216.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 21,
+    "title": "Kaiju No. 8",
+    "genres": [
+      "Action",
+      "Military",
+      "Shounen"
+    ],
+    "rating": 8.3,
+    "year": 2024,
+    "episodes": 12,
+    "status": "Completed",
+    "synopsis": "A man gains kaiju powers after a parasite enters his body during a cleanup mission.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1492/140690.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 22,
+    "title": "Violet Evergarden",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Slice of Life"
+    ],
+    "rating": 8.5,
+    "year": 2018,
+    "episodes": 13,
+    "status": "Completed",
+    "synopsis": "A former soldier works as a ghostwriter to understand the meaning of love and emotions.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/3/88097.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 23,
+    "title": "A Silent Voice",
+    "genres": [
+      "Drama",
+      "Romance",
+      "School",
+      "Shounen"
+    ],
+    "rating": 8.9,
+    "year": 2016,
+    "episodes": 1,
+    "status": "Completed",
+    "synopsis": "A former bully seeks redemption by reconnecting with a deaf girl he tormented.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1122/96435.jpg",
+    "type": "Movie"
+  },
+  {
+    "id": 24,
+    "title": "Your Lie in April",
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance",
+      "School",
+      "Shounen"
+    ],
+    "rating": 8.6,
+    "year": 2014,
+    "episodes": 22,
+    "status": "Completed",
+    "synopsis": "A piano prodigy who lost his ability to hear music meets a violinist who changes his life.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/3/67177.jpg",
+    "type": "TV"
+  },
+  {
+    "id": 25,
+    "title": "Delicious in Dungeon",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "rating": 8.5,
+    "year": 2024,
+    "episodes": 24,
+    "status": "Completed",
+    "synopsis": "Adventurers explore a dungeon and cook the monsters they defeat to survive.",
+    "image_url": "https://cdn.myanimelist.net/images/anime/1456/140736.jpg",
+    "type": "TV"
+  }
+]

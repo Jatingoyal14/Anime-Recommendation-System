@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeRec - AI-Powered Anime Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">
+                <span class="header__icon">🎌</span>
+                AnimeRec
+            </h1>
+            <nav class="header__nav">
+                <button class="btn btn--secondary btn--sm" onclick="showStatsModal()">📊 Stats</button>
+                <button class="btn btn--secondary btn--sm" onclick="showHelpModal()">❓ Help</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h2 class="welcome__title">Discover Your Next Favorite Anime</h2>
+                <p class="welcome__subtitle">Rate anime to get personalized recommendations using advanced ML algorithms</p>
+            </section>
+
+            <!-- Control Panel -->
+            <section class="control-panel">
+                <div class="control-panel__grid">
+                    <!-- Search -->
+                    <div class="search-box">
+                        <input type="text" id="searchInput" class="form-control" placeholder="Search anime titles...">
+                        <button class="btn btn--primary" onclick="searchAnime()">🔍</button>
+                    </div>
+
+                    <!-- Algorithm Selector -->
+                    <div class="algorithm-selector">
+                        <label class="form-label">Recommendation Algorithm:</label>
+                        <select id="algorithmSelect" class="form-control" onchange="generateRecommendations()">
+                            <option value="content">Content-Based Filtering</option>
+                            <option value="collaborative">Collaborative Filtering</option>
+                            <option value="popularity">Popularity-Based</option>
+                            <option value="hybrid">Hybrid System</option>
+                        </select>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="filters">
+                        <label class="form-label">Filters:</label>
+                        <div class="filter-controls">
+                            <select id="genreFilter" class="form-control" onchange="applyFilters()">
+                                <option value="">All Genres</option>
+                                <option value="Action">Action</option>
+                                <option value="Adventure">Adventure</option>
+                                <option value="Comedy">Comedy</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Fantasy">Fantasy</option>
+                                <option value="Romance">Romance</option>
+                                <option value="Shounen">Shounen</option>
+                                <option value="Supernatural">Supernatural</option>
+                            </select>
+                            <select id="yearFilter" class="form-control" onchange="applyFilters()">
+                                <option value="">All Years</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2020s">2020-2024</option>
+                                <option value="2010s">2010-2019</option>
+                                <option value="2000s">2000-2009</option>
+                                <option value="1990s">1990-1999</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Generate Recommendations Button -->
+                    <div class="recommendation-actions">
+                        <button class="btn btn--primary btn--lg" onclick="generateRecommendations()">
+                            ✨ Get Recommendations
+                        </button>
+                        <button class="btn btn--secondary" onclick="clearRatings()">🗑️ Clear Ratings</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Algorithm Explanation -->
+            <section class="algorithm-info">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Current Algorithm: <span id="currentAlgorithmName">Content-Based Filtering</span></h3>
+                        <p id="algorithmDescription">Recommends anime similar to ones you've rated highly based on genre similarity using cosine similarity calculations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <div class="section-header">
+                    <h2 id="resultsTitle">Featured Anime</h2>
+                    <div class="results-count">
+                        <span id="resultsCount">25 anime found</span>
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div id="loadingState" class="loading-state hidden">
+                    <div class="loading-spinner"></div>
+                    <p>Generating recommendations...</p>
+                </div>
+
+                <!-- Anime Grid -->
+                <div id="animeGrid" class="anime-grid">
+                    <!-- Anime cards will be populated by JavaScript -->
+                </div>
+
+                <!-- No Results -->
+                <div id="noResults" class="no-results hidden">
+                    <h3>No anime found</h3>
+                    <p>Try adjusting your filters or search terms.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rating Modal -->
+    <div id="ratingModal" class="modal hidden">
+        <div class="modal__backdrop" onclick="closeRatingModal()"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="ratingModalTitle">Rate This Anime</h3>
+                <button class="modal__close" onclick="closeRatingModal()">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="anime-rating-preview">
+                    <img id="ratingAnimeImage" src="" alt="Anime poster" class="rating-anime-image">
+                    <div class="rating-anime-info">
+                        <h4 id="ratingAnimeTitle"></h4>
+                        <p id="ratingAnimeGenres"></p>
+                    </div>
+                </div>
+                <div class="rating-interface">
+                    <label class="form-label">Your Rating (1-10):</label>
+                    <div class="star-rating" id="starRating">
+                        <span class="star" data-rating="1">⭐</span>
+                        <span class="star" data-rating="2">⭐</span>
+                        <span class="star" data-rating="3">⭐</span>
+                        <span class="star" data-rating="4">⭐</span>
+                        <span class="star" data-rating="5">⭐</span>
+                        <span class="star" data-rating="6">⭐</span>
+                        <span class="star" data-rating="7">⭐</span>
+                        <span class="star" data-rating="8">⭐</span>
+                        <span class="star" data-rating="9">⭐</span>
+                        <span class="star" data-rating="10">⭐</span>
+                    </div>
+                    <div class="rating-feedback">
+                        <span id="ratingValue">Rate this anime</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="btn btn--secondary" onclick="closeRatingModal()">Cancel</button>
+                <button class="btn btn--primary" onclick="submitRating()">Submit Rating</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Modal -->
+    <div id="statsModal" class="modal hidden">
+        <div class="modal__backdrop" onclick="closeStatsModal()"></div>
+        <div class="modal__content modal__content--wide">
+            <div class="modal__header">
+                <h3>Your Anime Statistics</h3>
+                <button class="modal__close" onclick="closeStatsModal()">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalRatings">0</div>
+                        <div class="stat-label">Total Ratings</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="averageRating">0.0</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="favoriteGenre">-</div>
+                        <div class="stat-label">Favorite Genre</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="watchlistCount">0</div>
+                        <div class="stat-label">Watchlist Items</div>
+                    </div>
+                </div>
+                <div class="recent-ratings">
+                    <h4>Recent Ratings</h4>
+                    <div id="recentRatingsList" class="recent-ratings-list">
+                        <!-- Recent ratings will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+    <div id="helpModal" class="modal hidden">
+        <div class="modal__backdrop" onclick="closeHelpModal()"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>How to Use AnimeRec</h3>
+                <button class="modal__close" onclick="closeHelpModal()">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="help-content">
+                    <h4>🎯 Getting Started</h4>
+                    <ol>
+                        <li>Rate anime you've watched by clicking "Rate" on any anime card</li>
+                        <li>Choose a recommendation algorithm from the dropdown</li>
+                        <li>Click "Get Recommendations" to see personalized suggestions</li>
+                    </ol>
+                    
+                    <h4>🤖 Recommendation Algorithms</h4>
+                    <ul>
+                        <li><strong>Content-Based:</strong> Finds anime similar to ones you rated highly</li>
+                        <li><strong>Collaborative:</strong> Recommends anime liked by similar users</li>
+                        <li><strong>Popularity:</strong> Shows highly-rated popular anime</li>
+                        <li><strong>Hybrid:</strong> Combines multiple approaches for best results</li>
+                    </ul>
+                    
+                    <h4>🔍 Features</h4>
+                    <ul>
+                        <li>Search anime by title</li>
+                        <li>Filter by genre and year</li>
+                        <li>Add anime to your watchlist</li>
+                        <li>View your rating statistics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 AnimeRec - Built with ❤️ for anime lovers</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
